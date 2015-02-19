@@ -11,7 +11,7 @@
 
 #define NIL -1
 
-int FindValue(const int& needle, std::vector<int>& haystack)
+int LinearSearch(const int& needle, std::vector<int>& haystack)
 {
     int i;
     int foundIndex = NIL;
@@ -42,7 +42,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "Our collection is:" << std::endl;
     PrintVector(values);
     std::cout << "Looking for: " << searchValue << std::endl;
-    foundValue = FindValue(searchValue, values);
+    foundValue = LinearSearch(searchValue, values);
     if (foundValue == NIL)
         std::cout << "Not found in collection" << std::endl;
     else
